@@ -21,7 +21,7 @@ op_auth() {
     max_retries=5
     retry_count=0
     while true; do
-        OP_SESSION_TOKEN=$(op signin --raw 2>&1)
+        OP_SESSION_TOKEN=$("$_op" signin --raw 2>&1)
         if [[ $? -eq 0 ]]; then
             echo "OP_SESSION_TOKEN=${OP_SESSION_TOKEN}" > "$config_file"
             echo "Authentication successful."
