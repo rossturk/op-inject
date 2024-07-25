@@ -1,5 +1,5 @@
+_op=${_op:-@op@}
 _op=${_op//@/}
-
 
 op_auth() {
     local config_file="$HOME/.cache/1p-session"
