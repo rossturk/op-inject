@@ -65,5 +65,3 @@ op_inject() {
     echo "op '$item' -> '$env_var_name'"
 }
 
-#op_auth
-#op_inject "MAILCHIMP_PASS" "Marketing" "Mailchimp" "password"
